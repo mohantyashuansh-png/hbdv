@@ -212,6 +212,13 @@
         <p class="msg-signature">— Always yours<br/>Pavan</p>
       </div>
 
+      <div class="audio-section" style="text-align: center; margin-bottom: 30px; margin-top: 20px;">
+        <audio controls style="width: 100%; max-width: 300px; border-radius: 30px; box-shadow: 0 4px 15px rgba(232, 99, 122, 0.2);">
+          <source src="videos/love_audio.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+
       <div class="other-gift-prompt">
         <p id="bday-prompt-text">Want to open your other gift too? 👀</p>
         <button id="btn-to-game" onclick="openGift('game')" class="btn-secondary">Open Game Prize 🏅</button>
@@ -242,21 +249,13 @@
           </div>
         </div>
 
-        <div class="bonus-photo-strip">
-          <p class="strip-label">✨ Bonus Moments ✨</p>
-          <div class="strip-row">
-            <div class="strip-item">
-              <img src="photos/bonus1.jpg" onerror="this.parentElement.classList.add('no-photo')" alt="Bonus 1" />
-              <div class="photo-placeholder-icon">🌹</div>
-            </div>
-            <div class="strip-item">
-              <img src="photos/bonus2.jpg" onerror="this.parentElement.classList.add('no-photo')" alt="Bonus 2" />
-              <div class="photo-placeholder-icon">💕</div>
-            </div>
-            <div class="strip-item">
-              <img src="photos/bonus3.jpg" onerror="this.parentElement.classList.add('no-photo')" alt="Bonus 3" />
-              <div class="photo-placeholder-icon">🎀</div>
-            </div>
+        <div class="video-frame-wrapper" style="margin-top: 30px;">
+          <div class="video-label">✨ More Memories ✨</div>
+          <div class="video-placeholder-box" id="video-slot-2">
+            <video controls width="100%" style="border-radius:16px" onerror="document.getElementById('video-slot-2').classList.add('no-video')">
+              <source src="videos/bonus.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
           </div>
         </div>
       </div>
